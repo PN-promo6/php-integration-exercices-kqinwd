@@ -24,11 +24,13 @@
                         </div>
                         <ul class="list-group mb-3">
                             <?php
-                            for ($i = 1; $i < 5; $i++) { ?>
+                            $todo = array("rapport de stage", "sport", "cuisine", "The Wire");
+                            foreach ($todo as $oneTodo) {
+                            ?>
                                 <li class="list-group-item">
                                     <i class="far fa-square done-icon"></i>
                                     <i class="far fa-check-square done-icon"></i>
-                                    <span class="todo-text">Task <?php echo $i; ?></span>
+                                    <span class="todo-text"><?= $oneTodo ?></span>
                                     <i class="far fa-trash-alt"></i>
                                 </li>
                             <?php
@@ -55,6 +57,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5bb1d77498.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
